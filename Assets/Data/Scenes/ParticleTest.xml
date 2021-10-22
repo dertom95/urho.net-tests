@@ -1,0 +1,249 @@
+<scene id="1">
+	<component type="Octree" id="846160001"/>
+	<component type="DebugRenderer" id="846160003"/>
+	<node id="846160000">
+		<attribute name="Name" value="ParticleTest"/>
+		<component type="Zone" id="846160005">
+			<attribute name="Bounding Box Min" value="-2000 -2000 -2000"/>
+			<attribute name="Bounding Box Max" value="2000 2000 2000"/>
+			<attribute name="Ambient Color" value="0.15 0.15 0.15 1"/>
+			<attribute name="Fog Color" value="0.5 0.5 0.7 1"/>
+			<attribute name="Fog Start" value="300"/>
+			<attribute name="Fog End" value="500"/>
+		</component>
+		<component type="RenderData" id="846160007" SharpTypeName="RenderData, Game, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" RenderPath="RenderPaths/Forward.xml" HDR="false" Gamma="false" Bloom="false" FXAA2="false" sRGB="false">
+			<attribute name="RenderPath" value="RenderPaths/Forward.xml"/>
+			<attribute name="HDR" value="False"/>
+			<attribute name="Gamma" value="False"/>
+			<attribute name="Bloom" value="False"/>
+			<attribute name="FXAA2" value="False"/>
+			<attribute name="sRGB" value="False"/>
+		</component>
+		<node id="846160001">
+			<attribute name="Name" value="Camera"/>
+			<attribute name="Position" value="6.92579 4.95831 7.35889"/>
+			<attribute name="Rotation" value="0.780483 0.208704 -0.336872 -0.483536"/>
+			<attribute name="Scale" value="1 1 1"/>
+			<attribute name="Variables"/>
+			<attribute name="Tags">
+				<string value="Collection"/>
+				<string value="Collection_recursive"/>
+			</attribute>
+			<component type="RotationFix" id="846160009" SharpTypeName="RotationFix, Game, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null"/>
+			<component type="Camera" id="846160011">
+				<attribute name="Orthographic" value="false"/>
+				<attribute name="FOV" value="39.597755335771296"/>
+				<attribute name="Near Clip" value="0.10000000149011612"/>
+				<attribute name="Far Clip" value="100.0"/>
+			</component>
+		</node>
+		<node id="846160002">
+			<attribute name="Name" value="Empty"/>
+			<attribute name="Position" value="0 0 0"/>
+			<attribute name="Rotation" value="1 -0 -0 -0"/>
+			<attribute name="Scale" value="0.266874 0.266874 0.266874"/>
+			<attribute name="Variables"/>
+			<attribute name="Tags">
+				<string value="Collection"/>
+				<string value="Collection_recursive"/>
+			</attribute>
+			<component type="ParticleEmitter" id="846160013">
+				<attribute name="Is Enabled" value="true"/>
+				<attribute name="Effect" value="ParticleEffect;Particle/Dust.xml"/>
+				<attribute name="Can Be Occluded" value="true"/>
+				<attribute name="Cast Shadows" value="false"/>
+				<attribute name="Is Emitting" value="true"/>
+				<attribute name="Serialize Particles" value="true"/>
+			</component>
+		</node>
+		<node id="846160003">
+			<attribute name="Name" value="Empty.002"/>
+			<attribute name="Position" value="6.84571e-08 0 2"/>
+			<attribute name="Rotation" value="1 -0 -0 -0"/>
+			<attribute name="Scale" value="0.266874 0.266874 0.266874"/>
+			<attribute name="Variables"/>
+			<attribute name="Tags">
+				<string value="Collection"/>
+				<string value="Collection_recursive"/>
+			</attribute>
+			<component type="ParticleEmitter" id="846160014">
+				<attribute name="Is Enabled" value="true"/>
+				<attribute name="Effect" value="ParticleEffect;Particle/Burst.xml"/>
+				<attribute name="Can Be Occluded" value="true"/>
+				<attribute name="Cast Shadows" value="false"/>
+				<attribute name="Is Emitting" value="true"/>
+				<attribute name="Serialize Particles" value="true"/>
+			</component>
+		</node>
+		<node id="846160004">
+			<attribute name="Name" value="Empty.003"/>
+			<attribute name="Position" value="1.36914e-07 0 4"/>
+			<attribute name="Rotation" value="1 -0 -0 -0"/>
+			<attribute name="Scale" value="0.266874 0.266874 0.266874"/>
+			<attribute name="Variables"/>
+			<attribute name="Tags">
+				<string value="Collection"/>
+				<string value="Collection_recursive"/>
+			</attribute>
+			<component type="ParticleEmitter" id="846160015">
+				<attribute name="Is Enabled" value="true"/>
+				<attribute name="Effect" value="ParticleEffect;Particle/SnowExplosion.xml"/>
+				<attribute name="Can Be Occluded" value="true"/>
+				<attribute name="Cast Shadows" value="false"/>
+				<attribute name="Is Emitting" value="true"/>
+				<attribute name="Serialize Particles" value="true"/>
+			</component>
+		</node>
+		<node id="846160005">
+			<attribute name="Name" value="Empty.004"/>
+			<attribute name="Position" value="2.05371e-07 0 6"/>
+			<attribute name="Rotation" value="1 -0 -0 -0"/>
+			<attribute name="Scale" value="0.266874 0.266874 0.266874"/>
+			<attribute name="Variables"/>
+			<attribute name="Tags">
+				<string value="Collection"/>
+				<string value="Collection_recursive"/>
+			</attribute>
+			<component type="ParticleEmitter" id="846160016">
+				<attribute name="Is Enabled" value="true"/>
+				<attribute name="Effect" value="ParticleEffect;Particle/Smoke.xml"/>
+				<attribute name="Can Be Occluded" value="true"/>
+				<attribute name="Cast Shadows" value="false"/>
+				<attribute name="Is Emitting" value="true"/>
+				<attribute name="Serialize Particles" value="true"/>
+			</component>
+		</node>
+		<node id="846160006">
+			<attribute name="Name" value="Empty.005"/>
+			<attribute name="Position" value="2.73828e-07 0 8"/>
+			<attribute name="Rotation" value="1 -0 -0 -0"/>
+			<attribute name="Scale" value="0.266874 0.266874 0.266874"/>
+			<attribute name="Variables"/>
+			<attribute name="Tags">
+				<string value="Collection"/>
+				<string value="Collection_recursive"/>
+			</attribute>
+			<component type="ParticleEmitter" id="846160017">
+				<attribute name="Is Enabled" value="true"/>
+				<attribute name="Effect" value="ParticleEffect;Particle/SmokeStack.xml"/>
+				<attribute name="Can Be Occluded" value="true"/>
+				<attribute name="Cast Shadows" value="false"/>
+				<attribute name="Is Emitting" value="true"/>
+				<attribute name="Serialize Particles" value="true"/>
+			</component>
+		</node>
+		<node id="846160007">
+			<attribute name="Name" value="Empty.006"/>
+			<attribute name="Position" value="3.42285e-07 0 10"/>
+			<attribute name="Rotation" value="1 -0 -0 -0"/>
+			<attribute name="Scale" value="0.266874 0.266874 0.266874"/>
+			<attribute name="Variables"/>
+			<attribute name="Tags">
+				<string value="Collection"/>
+				<string value="Collection_recursive"/>
+			</attribute>
+			<component type="ParticleEmitter" id="846160018">
+				<attribute name="Is Enabled" value="true"/>
+				<attribute name="Effect" value="ParticleEffect;Particle/Disco.xml"/>
+				<attribute name="Can Be Occluded" value="true"/>
+				<attribute name="Cast Shadows" value="false"/>
+				<attribute name="Is Emitting" value="true"/>
+				<attribute name="Serialize Particles" value="true"/>
+			</component>
+		</node>
+		<node id="846160008">
+			<attribute name="Name" value="Empty.013"/>
+			<attribute name="Position" value="-2 0 10"/>
+			<attribute name="Rotation" value="1 -0 -0 -0"/>
+			<attribute name="Scale" value="0.266874 0.266874 0.266874"/>
+			<attribute name="Variables"/>
+			<attribute name="Tags">
+				<string value="Collection"/>
+				<string value="Collection_recursive"/>
+			</attribute>
+			<component type="ParticleEmitter" id="846160019">
+				<attribute name="Is Enabled" value="true"/>
+				<attribute name="Effect" value="ParticleEffect;Particle/Fire.xml"/>
+				<attribute name="Can Be Occluded" value="true"/>
+				<attribute name="Cast Shadows" value="false"/>
+				<attribute name="Is Emitting" value="true"/>
+				<attribute name="Serialize Particles" value="true"/>
+			</component>
+		</node>
+		<node id="846160009">
+			<attribute name="Name" value="Empty.014"/>
+			<attribute name="Position" value="-2 0 -0.0932016"/>
+			<attribute name="Rotation" value="1 -0 -0 -0"/>
+			<attribute name="Scale" value="0.266874 0.266874 0.266874"/>
+			<attribute name="Variables"/>
+			<attribute name="Tags">
+				<string value="Collection"/>
+				<string value="Collection_recursive"/>
+			</attribute>
+			<component type="ParticleEmitter" id="846160020">
+				<attribute name="Is Enabled" value="true"/>
+				<attribute name="Effect" value="ParticleEffect;Particle/Fire.xml"/>
+				<attribute name="Can Be Occluded" value="true"/>
+				<attribute name="Cast Shadows" value="false"/>
+				<attribute name="Is Emitting" value="true"/>
+				<attribute name="Serialize Particles" value="true"/>
+			</component>
+		</node>
+		<node id="846160010">
+			<attribute name="Name" value="Empty.015"/>
+			<attribute name="Position" value="-2 0 5.03637"/>
+			<attribute name="Rotation" value="1 -0 -0 -0"/>
+			<attribute name="Scale" value="0.266874 0.266874 0.266874"/>
+			<attribute name="Variables"/>
+			<attribute name="Tags">
+				<string value="Collection"/>
+				<string value="Collection_recursive"/>
+			</attribute>
+			<component type="ParticleEmitter" id="846160021">
+				<attribute name="Is Enabled" value="true"/>
+				<attribute name="Effect" value="ParticleEffect;Particle/RedFlame.xml"/>
+				<attribute name="Can Be Occluded" value="true"/>
+				<attribute name="Cast Shadows" value="false"/>
+				<attribute name="Is Emitting" value="true"/>
+				<attribute name="Serialize Particles" value="true"/>
+			</component>
+		</node>
+		<node id="846160011">
+			<attribute name="Name" value="Light"/>
+			<attribute name="Position" value="-1.00545 5.90386 4.07625"/>
+			<attribute name="Rotation" value="0.570948 0.272171 -0.75588 -0.169076"/>
+			<attribute name="Scale" value="1 1 1"/>
+			<attribute name="Variables"/>
+			<attribute name="Tags">
+				<string value="Collection"/>
+				<string value="Collection_recursive"/>
+			</attribute>
+			<component type="RotationFix" id="846160022" SharpTypeName="RotationFix, Game, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null"/>
+			<component type="Light" id="846160024">
+				<attribute name="Is Enabled" value="true"/>
+				<attribute name="Use Physical Values" value="False"/>
+				<attribute name="Brightness Multiplier" value="1000.0"/>
+				<attribute name="Light Type" value="Point"/>
+				<attribute name="Range" value="0.10000000149011612"/>
+				<attribute name="Color" value="1.0 1.0 1.0 1"/>
+				<attribute name="Cast Shadows" value="true"/>
+			</component>
+		</node>
+		<node id="846160012">
+			<attribute name="Name" value="Plane"/>
+			<attribute name="Position" value="-1.96639 -0.500459 5.98468"/>
+			<attribute name="Rotation" value="1 -0 -1.05213e-08 -0"/>
+			<attribute name="Scale" value="2.75062 2.75062 7.92903"/>
+			<attribute name="Variables"/>
+			<attribute name="Tags">
+				<string value="Collection"/>
+				<string value="Collection_recursive"/>
+			</attribute>
+			<component type="StaticModel" id="846160025">
+				<attribute name="Model" value="Model;Models/846-ParticleTest-Plane.mdl"/>
+				<attribute name="Material" value="Material;"/>
+				<attribute name="Cast Shadows" value="true"/>
+			</component>
+		</node>
+	</node>
+</scene>
